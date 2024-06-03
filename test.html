@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Picker Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #timePickerContainer {
+      text-align: center;
+    }
+
+    #timePicker {
+      font-size: 16px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    #setTimeButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="timePickerContainer">
+    <label for="timePicker">Select Time:</label>
+    <select id="timePicker">
+      <option value="09:00">9:00 AM</option>
+      <option value="11:00">11:00 AM</option>
+      <option value="13:00">1:00 PM</option>
+      <option value="15:00">3:00 PM</option>
+      <option value="17:00">5:00 PM</option>
+    </select>
+    <button id="setTimeButton" onclick="setTime()">Set Time</button>
+  </div>
+
+  <script>
+    function setTime() {
+      var selectedTime = document.getElementById("timePicker").value;
+      alert("Selected time: " + selectedTime);
+      // You can use the selected time as needed, e.g., submit it with a form or perform other actions.
+    }
+  </script>
+</body>
+</html>
+

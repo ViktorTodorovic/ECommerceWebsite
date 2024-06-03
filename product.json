@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Сухомеснато",
+        "price": 500,
+        "image": "img/suhomesnato.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Сухомеснато",
+        "price": 600,
+        "image": "img/suhomesnato.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Сухомеснато",
+        "price": 700,
+        "image": "img/suhomesnato.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Сухомеснато",
+        "price": 700,
+        "image": "img/suhomesnato.jpg"
+    }
+    ,
+    {
+        "id": 5,
+        "name": "Сухомеснато",
+        "price": 700,
+        "image": "img/suhomesnato.jpg"
+    }
+    ,
+    {
+        "id": 6,
+        "name": "Сухоместано",
+        "price": 700,
+        "image": "img/suhomesnato.jpg"
+    }
+
+]
+

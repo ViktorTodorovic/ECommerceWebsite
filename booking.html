@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Обилазак</title>
+</head>
+<body class="zaBody bodyShop">
+
+
+      <!-- Navigacija, fixovana za vrh stranice -->
+  <nav class="navbar navbar-expand-lg navbar-dark p-md-3 fixed-top " style="background-color:#343a40;">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Етно Домаћинство</a>
+      <button type="button"
+              class="navbar-toggler"
+              data-bs-target="#navbarNav"
+              data-bs-toggle="collapse"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <div class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-white">Почетна</a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html" class="nav-link text-white">Е-Продавница</a>
+          </li>
+          <li class="nav-item">
+            <a href="booking.html" class="nav-link text-white">Обилазак</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+  <div class="container">
+  <div class="gallery">
+    <a href="img/galerija.jpg" data-lightbox="gallery" data-title="Galerija">
+      <img src="img/galerija.jpg" alt="Galerija">
+      <div class="overlay-text">ПРЕГЛЕДАЈ ГАЛЕРИЈУ</div>
+    </a>
+  </div>
+
+  <div style="display: none;">
+    <a href="img/galerija (1).jpg" data-lightbox="gallery" data-title="Слика"></a>
+    <a href="img/galerija (2).jpg" data-lightbox="gallery" data-title="Слика"></a>
+    <a href="img/galerija (3).jpg" data-lightbox="gallery" data-title="Слика"></a>
+    <a href="img/galerija (4).jpg" data-lightbox="gallery" data-title="Слика"></a>
+    <a href="img/galerija (5).jpg" data-lightbox="gallery" data-title="Слика"></a>
+    <a href="img/galerija (6).jpg" data-lightbox="gallery" data-title="Слика"></a>
+    <!-- Dodajte više slika po potrebi -->
+  </div>
+  
+
+    <div class="checkoutLayout">
+      <div class="returnCart">
+<h1>Заказивање обиласка</h1>
+<p>Закажите обилазак нашег етно домаћинства, јединствене дестинације која ће вас одвести на незаборавно путовање кроз богату културу и традицију. Очекује вас аутентична атмосфера и доживљај који ће вам приближити начин живота који се некада водио на селу.</p>
+<br>
+<p>Наша етно домаћинства пружају посебно искуство где ћете имати прилику да уживате у правој домаћој кухињи, са јелима припремљеним према традиционалним рецептима. Посетиоци ће бити одушевљени широким избором јела од локално узгајаних састојака, која оживљавају укусе старих времена. Било да је у питању домаћа супа, печење испод сача или слаткиши припремљени по старим рецептима, наша храна ће вас освојити својом аутентичношћу и укусом.</p>
+<br>
+<p>Добродошли сте да резервишете свој термин и да се придружите нашем етно путовању, где ће сваки тренутак бити испуњен топлином домаћинства и пријатељском атмосфером. Очекујемо вас са отвореним срцем и спремни смо да вам пружимо незабораван доживљај који ће остати урезан у вашем сећању.
+</p>
+</div>
+
+<div class="right">
+  <h1>Заказивање</h1>
+  <form id="bookingForm" onsubmit="submitForm(event)">
+    <div class="form">
+      <div class="group">
+        <label for="imePrezime">Име и Презиме</label>
+        <input type="text" name="imePrezime" id="imePrezime" required>
+      </div>
+      <div class="group">
+        <label for="brojTelefona">Број телефона</label>
+        <input type="text" name="brojTelefona" id="brojTelefona" required>
+      </div>
+      <div class="group">
+        <label for="email">Е-адреса</label>
+        <input type="text" name="email" id="email" required>
+      </div>
+      <div class="group">
+        <label for="date">Датум:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="group">
+        <label for="time">Време:</label>
+        <select id="time" name="time" required>
+          <option value="09:00">9:00 AM</option>
+          <option value="11:00">11:00 AM</option>
+          <option value="13:00">1:00 PM</option>
+          <option value="15:00">3:00 PM</option>
+          <option value="17:00">5:00 PM</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="buttonBooking">Закажи термин</button>
+  </form>
+</div>
+    </div>
+  </div>
+
+
+
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      
+        <ul class="list">
+            <li>
+                <a href="index.html">Почетна</a>
+            </li>
+            <li>
+                <a href="shop.html">Е-Продавница</a>
+            </li>
+            <li>
+                <a href="booking.html">Обилазак</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Copyright 2023
+        </p>
+      </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>
